@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="K_Smierc.jfif" alt="Skarbiec" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">"Bierzemy tyle bogactw ile możemy unieść i uciekamy!" krzyknęłaś. Rzucasz się
+                momentalnie na największą z górek złota, po czym zbierasz je podwijając fartuch. Kątem oka widzisz, że
+                Odryn jest zdezorientowany Twoim zachowaniem. "Na co czekasz?! Tunel niedługo się zawali! Bierz ile
+                możesz i uciekamy!" - po Twoim apelu Odryn zaczyna podnosić niektóre przedmioty z ziemi, jednakże robi
+                to bez przekonania. Po chwili czujesz, że osiągnęłaś swój limit ciężaru i więcej nie dasz rady. Patrzysz
+                na towarzysz, który nawet pomimo takiej rany powinien nieść obecnie minimum dwa razy tyle, jednakże nie
+                ma już czasu na pytanie go dlaczego tak miernie zbierał. Krzyczysz "Za mną! Uciekamy!", po czym
+                wybiegasz z pomieszczenia. Po drodze słyszysz brzdęk wypadających z Twojej sukni monet, jednakże nie ma
+                czasu, aby cofać się po drobne. Z niemałym wysiłkiem pokonujesz kolejne stopnie w stronę wyjścia z
+                tunelu, aż tu nagle zaczynasz odczuwać przeszywające zimno w okolicy pasa. Czujesz, że coś jest nie tak.
+                Próbujesz się obrócić, jednakże nawet mały ruch wiąże się z potwornym bólem. Zaczynasz sobie uzmysławiać
+                co się stało. "Tylko dlaczego?" - myślisz. Nagle uczucie zimna zastępuje pustka przeradzająca się w
+                gorąc. Padasz na kolana, ale pomimo tego, że świat wiruje słyszysz kroki Odryna, który mija Cię dzierżąc
+                w dłoni zakrwawiony miecz. Tak, to już nie krew goblinów, tylko Twoja. Podnosisz głowę, aby zobaczyć
+                wyraz jego twarzy. Domyślasz się go, ale chcesz uzyskać potwierdzenie. Po kilku krokach Odryn odwraca
+                się mając obłęd w oczach. "Podziwiałem Cię. Chciałem Ci służyć dla chwały Obenisa, a Ty? Najpierw
+                wysłużyłaś się mną przy starciu z goblinami. Wiem, że mogłaś mi pomóc chociażby modlitwą, która
+                wzmocniłaby moje umiejętności, jednakże nie zrobiłaś tego, tak samo jak nawet nie próbowałaś mnie
+                wyleczyć po wszystkim. To jeszcze bym zrozumiał, ale w imię czego było moje poświęcenie? W imię
+                okradania skarbca? Wierzyłem, że chodzi o coś specjalnego o wyższe dobro, jednakże mój wuj miał rację
+                mówiąc, że kapłanom zależy tylko na bogactwach. Nie byłem w stanie znieść świadomości, że jesteś takim
+                człowiekiem. Żegnaj Jelifo.". W momencie, gdy Odryn kończył wypowiadać swoje słowa świat był już na wpół
+                czarny, a po chwili zupełnie straciłaś przytomność. To koniec...
+            </p>
+            <br />
+            <p style="text-align: center;">Musisz działać szybko - albo zaczynasz natychmiast rozczytywać inskrypcje,
+                aby zdobyć wiedzę, albo zabierasz tyle bogactw ile dasz radę unieść i od razu udajesz się do wyjścia.
+            </p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_w.html')">
+            <img src="K_zloto.jfif" alt="Skarby" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę bogactwa - kult Obenisa ich potrzebuje!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_t.html')">
+            <img src="K_Inskrypcje.jfif" alt="Odryn" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Odczytuję inskrypcje - ta wiedza jest bezcenna!</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
