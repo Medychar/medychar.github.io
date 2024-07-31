@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Zawalone_zejscie.jfif" alt="Zawalone_zejscie" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">"Bierzemy tyle bogactw ile możemy unieść i uciekamy zanim to miejsce się
+                zawali!" krzyknęłaś. Rzucasz
+                się momentalnie na największą z górek złota, po czym zbierasz je podwijając fartuch. Kątem oka widzisz,
+                że Odryn jest zdezorientowany Twoim zachowaniem, jednakże Twoja potęga wzbudza u niego nie tylko podziw,
+                ale i strach, więc zaczyna zbierać kosztowności. Po chwili dzierżycie już tyle złota ile potraficie
+                unieść i udajecie się do wyjścia. Po wyjściu na powierzchnię siadacie w bezpiecznym miejscu, aby
+                odzyskać siły. Nagle ziemia zaczyna się trząść - to tunel się wali. Już nigdy nie poznacie tajemnic
+                inskrypcji. Po dotarciu do wioski Odryna pozwalasz zachować mu połowę skarbów, które wyniósł ze skarbca
+                - drugą połowę zabierasz jako darowiznę dla świątyni Odenisa. Czy Twoi przełożeni będą bardziej
+                zadowoleni ze skarbów niż z informacji co kryły inskrypcje? Tego dowiesz się po powrocie...
+            </p>
+            <br />
+            <br />
+            <p style="text-align: center; color: black; font-weight: bold; font-size: xx-large;">
+                KONIEC</p>
+            <br />
+            <div style="text-align: center">
+                <a href="index.html" style="margin-left:auto; margin-right: auto;"><u>>>>
+                        Kliknij tutaj, aby rozpocząć przygodę od nowa. <<< </u></a>
+            </div>
+            <div style="align-items: center; border-top-width: 2px; border-top-color: black;">
+                <img src="Logos/Avatar_bez_tla.png" alt="Avatar"
+                    style="width: 256x; height: 256px; margin-left: auto; margin-right: auto;" />
+            </div>
+            <p>Dzięki za grę! Mam nadzieję, że była to dobra zabawa :) Będzie mi bardzo miło, jeśli zamieścisz komentarz
+                pod filmem wpisując w nim swoje zakończenie (jest ich sporo, a gra zajmuje chwilę, więc łamię tutaj
+                swoją zasadę krytykowania spoilerów :P ) oraz zaobserwujesz mnie na moich profilach - w zamian obiecuję,
+                że stworzę jeszcze wiele ciekawych materiałów :)</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://youtube.com/medychar')">
+            <img src="Logos/Youtube.png" alt="YT" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Subskrybuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.tiktok.com/@medychar')">
+            <img src="Logos/Tiktok.jpg" alt="Tiktok" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.instagram.com/medycharyt/')">
+            <img src="Logos/Instagram_text.jpg" alt="Instagram" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
