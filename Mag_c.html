@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Mag_skarbiec_2.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Kula ognia w dłoni rozświetla Ci drogę. Idziesz powoli rozglądając się
+                uważnie. W pewnym momencie zauważasz w oddali cienie - szybko rozpoznajesz, że należą do goblinów. Zanim
+                Cię zauważyły rzucasz w nie kulami ognia. Rozprawiałeś się z nimi w ten sposó wielokrotnie, ale nigdy w
+                tak ciasnym przejściu. Ich piski niosące się przez cały tunel i smród palonej skóry na długo zapadną Ci
+                w pamięć.</p>
+            <p style="text-align: center;">Po chwili marszu docierasz do końca tunelu. Znajduje się tam mała jaskinia, w
+                której dostrzegasz zwój, którego szukasz, jednakże Twój wzrok przykuwa coś innego. Jest tam bransoleta,
+                która przypomina "Obręcz Willfreda" - legendarny artefakt, który według wielu historii daje
+                właścicielowi nieśmiertelność, o której zawsze marzyłeś.</p>
+        </div>
+        <p style="text-align: center;">Co zamierzasz?</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Mag_c.html')">
+            <img src="Pergamin.jfif" alt="Pergamin" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Czytam pergamin - w końcu po to tu jestem</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Mag_o.html')">
+            <img src="Obrecz.jfif" alt="Obręcz" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Podchodzę zbadać obręcz
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

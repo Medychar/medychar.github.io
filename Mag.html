@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Zejscie_2.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Zyriusz podróżuje po świecie badając tajemnice odkąd skończył uniwersytet
+                magii. Niektóre z jego wypraw - tak jak ta - są powiązane z jego edukacją, ponieważ zleca je dyrektor
+                Dunway. Obecnie poszukuje on pergaminów, na których spisane są wskazówki jak przejść na święty poziom
+                magii elementalnej, którego nie udało się osiągnąć żadnemu magowi od ponad 50 lat.</p>
+            <br />
+            <p style="text-align: center;">Przeczesując ruiny trafiasz na zejście do podziemi. Jest to stary tunel,
+                który pomimo swojego
+                wieku wydaje się być bezpieczny. Niestety nie ma w nim żadnego oświetlenia. Co robisz?</p>
+        </div>
+    </header>
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Mag_c.html')">
+            <img src="Czar_ognia.jfif" alt="Czar ognia" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Używam magii ognia</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Mag_o.html')">
+            <img src="Oczy.jfif" alt="Pochodnia" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Moje oczy przyzwyczaiły się do ciemności podczas licznych nocnych podróży,
+                wchodzę!
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
