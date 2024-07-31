@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Zejscie_2.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Dostojna Jelifa, znana na całym kontynencie kapłanka Obenisa, ruszyła w drogę
+                od razu po zdobyciu informacji, według których na terenie ruin zamku mogą znajdować się bezcenne dla jej
+                wiary inskrypcje. Towarzyszy jej Odryn - odważny młodzieniec z pobliskiej wioski, którego fascynowała
+                postać Jelify odkąd usłyszał o niej po raz pierwszy będąc podrostkiem.</p>
+            <br />
+            <p style="text-align: center;">Po godzinie poszukiwań odnajdujecie wejście do podziemi. Tunel pomimo swojego
+                wieku wydaje się być bezpieczny. Niestety nie ma w nim żadnego oświetlenia. Co robisz?</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Modlitwa.html')">
+            <img src="Modlitwa.jfif" alt="Modlitwa" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Modlę się do Obenisa o światło</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p.html')">
+            <img src="Pochodnia.jfif" alt="Pochodnia" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Używam pochodni</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

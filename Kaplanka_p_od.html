@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="K_Skarbiec.jfif" alt="Skarbiec" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Szybkim gestem wysłałaś Odryna do walki. Chłopak początkowo nie był w stanie
+                zrozumieć co masz na myśli, jednakże po kilku sekundach z mieczem ręku i strachem w oczach ruszył do
+                walki. Zdałaś sobie właśnie sprawę, że w zasadzie nie wiesz o nim za wiele i bardzo możliwe, że nie ma
+                on żadnego doświadczenia w walce, a ekwipunek wygląda na nie pierwszej młodości, więc bardzo
+                prawdopodobne, że odziedziczył go po ojcu, a nie otrzymał podczas szkolenia. Niestety jest już za późno
+                na zmianę zdania - chłopak właśnie dotarł do pierwszego goblina i wykonuje zamach mieczem. Udaje mu się
+                trafić i niemalże odciąć rękę potwora, jednakże nie zauważa przy tym, że otworzył się na cios drugiego
+                przeciwnika. Przypuszczenia odnośnie wieku jego zbroi stają się prawdziwe i pazury oponenta ją
+                przebijają. Chłopak zostaje raniony w bok. Rana nie zagraża życiu, jednakże krwawienie i ból będą dla
+                niego mordęgą przez najbliższe godziny, a powrót do pełnej sprawności zajmie mu minimum kilka tygodni.
+                Już chwytasz za sztylet chcąc rzucić się do pomocy, jednakże okazuje się, że Twój towarzysz jest
+                twardszy niż podejrzewałaś. Głośno jęcząc wykonuje zamach mieczem i odcina łeb goblina, który go
+                zaatakował, po czym dobija drugiego, który był zdezorientowany po poprzednim ciosie. Podchodząc do niego
+                widzisz jak przekręca koszulę, którą miał pod zbroją i ściska nią korpus tak, żeby uciskała ranę. W jego
+                wzroku jednak nie widzisz już wobec Ciebie dawnego podziwu. Nic nie mówi, jednakże wyczuwasz, że przez
+                strach i emocje związane z walką odczucia towarzysza szybko przeszły z podziwu w stronę niezrozumienia i
+                pogardy. Podejrzewasz, że ma Ci za złe Twoją bierność i wysługiwanie się jego mieczem.
+            <p style="text-align: center;">Po chwili wkraczacie do
+                pomieszczenia, które okazuje się być skarbcem. Wyczuwasz tutaj starą magię i nie mylisz się - po chwili
+                całość pomieszczenia staje się świetnie oświetlona przez magicznie aktywowane świece. Dopiero teraz
+                dostrzegasz hałdy złotych monet, naczyń i biżuterii. Na samym środku jest kolumna z ogromną klepsydrą
+                oraz inskrypcjami, po które prawdopodobnie przybyłaś. Widziałaś już tego typu
+                mechanizmy. Szacujesz, że zostało Ci około 30 minut zanim pomieszczenie wraz z tunelem się zawalą, a z
+                racji głębokości nie będzie szło już się do nich dostać.</p>
+            </p>
+            <br />
+            <p style="text-align: center;">Musisz działać szybko - albo zaczynasz natychmiast rozczytywać inskrypcje,
+                aby zdobyć wiedzę, albo zabierasz tyle bogactw ile dasz radę unieść i od razu udajesz się do wyjścia.
+            </p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_w.html')">
+            <img src="K_zloto.jfif" alt="Skarby" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę bogactwa - kult Obenisa ich potrzebuje!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_t.html')">
+            <img src="K_Inskrypcje.jfif" alt="Odryn" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Odczytuję inskrypcje - ta wiedza jest bezcenna!</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

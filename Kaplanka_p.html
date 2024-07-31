@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Kaplanka_p.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Dzięki światłu pochodni poza zapachem stęchlizny nie mieliście żadnych
+                problemów
+                z zejściem na dół. Gdy schody się skończyły byliście w tunelu. Okazało się jednak, że nie byliście w nim
+                sami... </p>
+            <br />
+            <p style="text-align: center;">Zauważasz sylwetki dwóch goblinów. Jak planujesz się z nimi rozprawić?</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_ws.html')">
+            <img src="K_WalczSama.jfif" alt="Walka" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Walcz sama</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Kaplanka_p_od.html')">
+            <img src="K_WalkaOdryn.jfif" alt="Odryn" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Niech Odryn z nimi walczy</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
