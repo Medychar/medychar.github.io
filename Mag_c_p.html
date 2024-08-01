@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Mag_wiatr.jfif" alt="Wiatr wylatujący z tunelu" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Podchodzisz ostrożnie do pergaminu i zaczynasz go czytać. Na szczęście to
+                tylko jedna strona, więc nie musisz nawet go dotykać. Okazuje się, że jest tutaj opisany sposób na
+                zamianę swojego ciała w żywioł. Słyszałeś, że był to jeden z czarów magów świętego poziomu, ale nigdy
+                czegoś takiego nie widziałeś na własne oczy. W pewnym momencie ruszyłeś kostką i niechcący wcisnąłeś
+                płytkę - pułapkę. Nagle wszystko zaczyna trzeszczeć, rozglądasz się i zauważasz, że jaskinia się sypie.
+                Próbujesz chwycić pergamin, ale okazuje się, że po aktywowaniu pułapki tekst zaczyna znikać linia po
+                linii. Musisz podjąć decyzję - czytasz tekst i liczysz, że uda Ci się uciec opanowując nową technikę lub
+                uciekasz i wracasz do dyrektora bez informacji jak używać czaru. Decydujesz się na ryzyko. Czytasz
+                dokładnie wszystkie pozostałe linie, starając się zapamiętać jak najwięcej szczegółów. Obok Ciebie
+                upadają coraz to większe kawałki sufitu. Nagle słyszysz skrzypnięcie znad swojej głowy. Wiesz, że jeśli
+                nie uda Ci się użyć przeczytanego właśnie czaru to już Twój koniec. Zamykasz gwałtownie oczy i skupiasz
+                się tak jak nigdy wcześniej. Kolejne chrupnięcie... Czujesz, że głaz zaraz uderzy Cię w głowę i... udaje
+                Ci się! W ostatniej chwili zamieniasz się w mglisty wiatr. Kamień przelatuje przez Ciebie i uderza z
+                hukiem o posadzkę. Jesteś pewien, że po oberwaniu nim nie wyszedłbyś stąd żywy. Spoglądasz na miejsce
+                obręczy - okazuje się, że był to falsyfikat, który został roztrzaskany przez jeden z kawałków sufitu.
+                Zadowolony ze swojej decyzji wylatujesz z jaskini. Ciekawe jak zareaguje dyrektor Dunway, gdy pojawisz
+                się u niego w tej postaci...
+            </p>
+            <br />
+            <br />
+            <p style="text-align: center; color: black; font-weight: bold; font-size: xx-large;">
+                KONIEC</p>
+            <br />
+            <div style="text-align: center">
+                <a href="index.html" style="margin-left:auto; margin-right: auto;"><u>>>>
+                        Kliknij tutaj, aby rozpocząć przygodę od nowa. <<< </u></a>
+            </div>
+            <div style="align-items: center; border-top-width: 2px; border-top-color: black;">
+                <img src="Logos/Avatar_bez_tla.png" alt="Avatar"
+                    style="width: 256x; height: 256px; margin-left: auto; margin-right: auto;" />
+            </div>
+            <p>Dzięki za grę! Mam nadzieję, że była to dobra zabawa :) Będzie mi bardzo miło, jeśli zamieścisz komentarz
+                pod filmem wpisując w nim swoje zakończenie (jest ich sporo, a gra zajmuje chwilę, więc łamię tutaj
+                swoją zasadę krytykowania spoilerów :P ) oraz zaobserwujesz mnie na moich profilach - w zamian obiecuję,
+                że stworzę jeszcze wiele ciekawych materiałów :)</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://youtube.com/medychar')">
+            <img src="Logos/Youtube.png" alt="YT" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Subskrybuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.tiktok.com/@medychar')">
+            <img src="Logos/Tiktok.jpg" alt="Tiktok" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.instagram.com/medycharyt/')">
+            <img src="Logos/Instagram_text.jpg" alt="Instagram" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
