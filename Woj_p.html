@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Woj_pokoj.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Zauważasz leżącą kilka metrów dalej starą pochodnię. Wygląda na dobrą, ale
+                potrzebującą czegoś na rozpałkę. Nie mając nic odpowiedniego przeczesujesz kilkukrotnie swoją brodę
+                dłonią i zgodnie z przewidywaniami udaje Ci się w ten sposób zdobyć kilka suchych włosów, następnie
+                wyciągasz z kieszeni krzemień i pocierając nim o ostrze topora podpalasz włosy na pochodni. Po chwili
+                jest ona już rozpalona na tyle, że może służyć do oświetlenia tunelu. Wchodzisz do środka. Rozglądając
+                się nie zauważasz niczego szczególnego, aż tu nagle pojawiają się w oddali 2 pary ślepi, które wyraźnie
+                zbliżają się w kierunku światła w złym zamiarze. Rzucasz pochodnię na ziemię, wyjmujesz łuk i oddajesz
+                strzał - pierwsze ślepia leżą. Drugi strzał - pudło, słyszysz odbicie się grotu od ściany oraz dziwne
+                kliknięcie. Trzeci strzał - jeśli teraz nie trafisz stwór, w którym rozpoznajesz goblina skoczy na
+                Ciebie i będziesz musiał się z nim siłować. Na szczęście trafiasz i przebijasz mu serce.</p>
+            <br />
+            <p style="text-align: center;">Po chwili marszu docierasz do pomieszczenia, w którym widzisz dziennik,
+                którego prawdopodobnie poszukujesz oraz topór, który przypomina Ci legendarny topór Ginwala - wojownika,
+                który podobno miał dwa i pół metra wzrostu, a ważył tyle co dwóch rosłych chłopów i jako jedyny z
+                północnych władców podbił całe południe. Jego broń była zagubiona od ponad 200 lat. Co robisz?</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_p_d.html')">
+            <img src="Woj_dziennik.jfif" alt="Dziennik" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę dziennik i uciekam</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_p_t.html')">
+            <img src="Woj_topor.jfif" alt="Topór" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę dziennik i topór</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

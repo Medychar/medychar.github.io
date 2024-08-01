@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Zawalone_zejscie.jfif" alt="Skarbiec" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Podchodzisz do dziennika, po czym chowasz go pod płaszczem. Spoglądasz na
+                topór
+                Ginwala. "Kiedyś po Ciebie wrócę" myślisz. Rozglądasz się i nie widząc nic więcej, co przykułoby Twoją
+                uwagę idziesz w stronę wyjścia. Podczas marszu słyszysz ze ścian coraz więcej pstryknięć podobnych do
+                tego, które pojawiło się w momencie, gdy spudłowałeś z łuku. Czyżbyś aktywował jakąś pułapkę? Nagle
+                tunel zaczyna się zawalać. Na szczęście jesteś już blisko powierzchni, więc po chwili biegu jesteś
+                bezpieczny. Myśląc o tym, że broń Ginwala już prawdopodobnie nigdy nie będzie Twoja nieco posmutniałeś,
+                jednakże wizja przyszłej misji poszukiwania złóż na podstawie notatek z dziennika podnosi Cię na duchu.
+            </p>
+            <br />
+            <br />
+            <p style="text-align: center; color: black; font-weight: bold; font-size: xx-large;">
+                KONIEC</p>
+            <br />
+            <div style="text-align: center">
+                <a href="index.html" style="margin-left:auto; margin-right: auto;"><u>>>>
+                        Kliknij tutaj, aby rozpocząć przygodę od nowa. <<< </u></a>
+            </div>
+            <div style="align-items: center; border-top-width: 2px; border-top-color: black;">
+                <img src="Logos/Avatar_bez_tla.png" alt="Avatar"
+                    style="width: 256x; height: 256px; margin-left: auto; margin-right: auto;" />
+            </div>
+            <p>Dzięki za grę! Mam nadzieję, że była to dobra zabawa :) Będzie mi bardzo miło, jeśli zamieścisz komentarz
+                pod filmem wpisując w nim swoje zakończenie (jest ich sporo, a gra zajmuje chwilę, więc łamię tutaj
+                swoją zasadę krytykowania spoilerów :P ) oraz zaobserwujesz mnie na moich profilach - w zamian obiecuję,
+                że stworzę jeszcze wiele ciekawych materiałów :)</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://youtube.com/medychar')">
+            <img src="Logos/Youtube.png" alt="YT" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Subskrybuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.tiktok.com/@medychar')">
+            <img src="Logos/Tiktok.jpg" alt="Tiktok" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-6 rounded-lg shadow-md cursor-pointer transition transform hover:-translate-y-1 hover:shadow-lg"
+            onclick="handleOptionClick('https://www.instagram.com/medycharyt/')">
+            <img src="Logos/Instagram_text.jpg" alt="Instagram" class="w-26 h-16 mb-4">
+            <p class="text-xl text-gray-800 font-semibold">Obserwuj!</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Zejscie_2.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Rendar jest wojownikiem pochodzącym z sąsiedniego kraju. Już będąc dzieckiem
+                był szkolony przez swojego ojca - legendarnego Rendora - na najlepszego z najlepszych. W wieku 15 lat
+                wyruszył po raz pierwszy na wojnę, z której wrócił z workiem głów pokonanych przez niego wrogów. Kiedy
+                dowiedział się o tym król uczynił Rendara swoim człowiekiem od zadań specjalnych. Tym razem wysłał go po
+                "Dziennik Heldara" - legendarny tekst, w którym ma być opisana trasa do podziemniej krainy pełnej
+                metali, z których można wykuć najwytrzymalsze bronie i zbroje. który ma znajdować się w
+                ruinach zamku Ab'korem. Idąc pomiędzy na wpół wyburzonymi
+                murami w pewnym momencie potykasz się o korzeń, a gdy wyklinając pod nosem unosisz głowę zauważasz, że
+                dotarłeś na miejsce. "To pewnie to zejście do podziemi" myślisz.</p>
+            <br />
+            <p style="text-align: center;">Wejście do tunelu nie jest pierwszej młodości, ale nie sprawia wrażenia
+                mogącego się za chwilę zawalić. Jedynym problemem jest brak światła. Co robisz?</p>
+        </div>
+    </header>
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_p.html')">
+            <img src="Pochodnia.jfif" alt="Pochodnia" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Używam pochodni</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_i.html')">
+            <img src="Woj_instynkt.jfif" alt="Zamknięte oczy" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Polegaj na instynkcie
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
