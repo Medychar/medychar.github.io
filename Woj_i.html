@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajemnica ruin</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl p-4">
+        <img src="Woj_i_d.jfif" alt="Ruiny" class="w-full h-auto rounded-lg shadow-md mb-4">
+        <div class="text-lg text-gray-700">
+            <p style="text-align: center;">Przypominasz sobie lekcje ojca, który uczył Cię jak wyczuwać przeciwników na
+                podstawie słuchu w sytuacji, gdy zostaniesz ranny i nie będziesz mógł korzystać ze wzroku. Skupiasz się,
+                po czym wchodzisz do tunelu z zamkniętymi oczami. Skradasz się bezszelestnie, aby samemu wydawać jak
+                najmniej dźwięków. W pewnym momencie coś przykuwa Twoją uwagę. Zatrzymujesz się. W dźwiękach, które
+                słyszysz rozpoznajesz oddech śpiących goblinów. Upewniasz się skąd pochodzi, po czym chwytasz za topór i
+                przepoławiasz oba stwory jednym cięciem.</p>
+            <br />
+            <p style="text-align: center;">Po chwili marszu docierasz do pomieszczenia, w którym widzisz dziennik,
+                którego prawdopodobnie poszukujesz oraz topór, który przypomina Ci legendarny topór Ginwala - wojownika,
+                który podobno miał dwa i pół metra wzrostu, a ważył tyle co dwóch rosłych chłopów i jako jedyny z
+                północnych władców podbił całe południe. Jego broń była zagubiona od ponad 200 lat. Co robisz?</p>
+        </div>
+    </header>
+
+    <!-- Options Section -->
+    <section class="w-full max-w-4xl p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_i_d.html')">
+            <img src="Woj_dziennik.jfif" alt="Dziennik" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę dziennik i uciekam</p>
+        </div>
+        <div class="option flex flex-col items-center bg-white p-4 rounded-lg shadow-md cursor-pointer"
+            onclick="handleOptionClick('Woj_i_t.html')">
+            <img src="Woj_topor.jfif" alt="Topór" class="w-full h-auto rounded-lg mb-2">
+            <p class="text-lg text-gray-700">Biorę dziennik i topór</p>
+        </div>
+    </section>
+
+    <script>
+        function handleOptionClick(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
